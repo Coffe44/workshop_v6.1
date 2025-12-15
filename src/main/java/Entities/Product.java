@@ -4,9 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "T_PRODUCT")
-public class Product
-{
-    @id
+public class Product {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PROD_ID")
     private long id;
